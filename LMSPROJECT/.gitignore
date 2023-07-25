@@ -1,0 +1,17 @@
+/bin/
+/obj/
+*.user
+*.suo
+*.sln.docstates
+*.vs/
+*.dll
+*.pdb
+*.manifest
+*.log
+*.msi
+*.zip
+/packages/
+_ReSharper*/
+*.ReSharper*
+*.DotSettings
+*.resharper.user
