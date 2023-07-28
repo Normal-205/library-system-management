@@ -40,7 +40,7 @@ namespace LMSProject
 
         private void circularPicture1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void jFlatButton1_Click(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace LMSProject
                     }
                     else
                     {
-                        MessageBox.Show("Student Number is invalid.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Không tìm thấy thông tin sinh viên", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -116,7 +116,7 @@ namespace LMSProject
                            "'" + txtStDepartment.Text + "', '" + txtStSemester.Text + "', " + Int64.Parse(txtStContact.Text) + ", '" + txtStEmail.Text + "', '"+ comboBoxBK.Text +"' ,'"+ dateTimePicker.Text +"') ", con);
                             con.Open();
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show("Book Issued successfully. ", " Success" , MessageBoxButtons.OK , MessageBoxIcon.Information);
+                            MessageBox.Show("Mượn sách thành công.", "Success" , MessageBoxButtons.OK , MessageBoxIcon.Information);
                             txtStName.Clear();
                             txtStNumber.Clear();
                             txtStDepartment.Clear();
@@ -130,13 +130,13 @@ namespace LMSProject
                 }
                 else
                 {
-                    MessageBox.Show("No Selected book or"+ " Student who has StudentNumber= "+stNumber+" has reached the maximum book number should be taken. ", "  Error or Max book number" ,MessageBoxButtons.OK , MessageBoxIcon.Error);
+                    MessageBox.Show("Không có sách nào được mượn hoặc "+ " sinh viên có mã  "+stNumber+" đã đạt giới hạn mượn sách. ", "Lỗi" ,MessageBoxButtons.OK , MessageBoxIcon.Error);
                 }
 
             }
             else
             {
-                MessageBox.Show("There is no Student Number which is entered. Please enter student number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Thầy/ cô vui lòng nhập mã sinh viên!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

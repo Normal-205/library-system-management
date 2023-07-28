@@ -145,31 +145,36 @@ namespace LMSProject
             {
                 if (MessageBox.Show("Dữ liệu sẽ được cập nhật!\nBạn có chắc chắn không?", "Cập nhật sách", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    SqlCommand cmd = new SqlCommand("update tblBookInfos set bkName = N'" + txtbkName.Text + "', bkAuthor = N'" + txtbkAuthor.Text + "'" +
-                                       ", bkPublication =N'" + txtbkPublication.Text + "', bkDate = '" + txtbkDate.Text + "', bkPrice =" + double.Parse(txtbkPrice.Text) + " " +
-                                       ", bkQuanity =" + Int64.Parse(txtbkQuantity.Text) + " where bkId =" + rowId + " ", con);
-                    con.Open();
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-                    DataSet dataset = new DataSet();
-                    dataAdapter.Fill(dataset);
-                    MessageBox.Show("Sách có mã ID =  " + bkId + "  đã được cập nhật.", " Success" + MessageBoxButtons.OK + MessageBoxIcon.Information);
-                    txtbkName.Clear();
-                    txtbkAuthor.Clear();
-                    txtbkPublication.Clear();
-                    txtbkDate.Clear();
-                    txtbkPrice.Clear();
-                    txtbkQuantity.Clear();
-                    //refreshing datagridview
-                    String CS1 = "data source=.; database = LMSDB; integrated security=SSPI";
-                    using (SqlConnection con1 = new SqlConnection(CS1))
-                    {
 
-                        SqlCommand cmd1 = new SqlCommand("select * from tblBookInfos", con1);
-                        con1.Open();
-                        SqlDataAdapter dataAdapter1 = new SqlDataAdapter(cmd1);
-                        DataSet dataset1 = new DataSet();
-                        dataAdapter1.Fill(dataset1);
-                        dataGridView1.DataSource = dataset1.Tables[0];
+                    string sqlQuery = "UPDATE tblBookInfos SET bkName = @bkName, bkAuthor = @bkAuthor, bkPublication = @bkPublication, bkDate = @bkDate, bkPrice = @bkPrice, bkQuanity = @bkQuantity WHERE bkId = @bkId";
+                    SqlCommand cmd = new SqlCommand(sqlQuery, con);
+                    cmd.Parameters.AddWithValue("@bkName", txtbkName.Text);
+                    cmd.Parameters.AddWithValue("@bkAuthor", txtbkAuthor.Text);
+                    cmd.Parameters.AddWithValue("@bkPublication", txtbkPublication.Text);
+                    cmd.Parameters.AddWithValue("@bkDate", txtbkDate.Text);
+                    cmd.Parameters.AddWithValue("@bkPrice", txtbkPrice.Text);
+                    cmd.Parameters.AddWithValue("@bkQuantity", txtbkQuantity.Text);
+                    try
+                    {
+                        con.Open();
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Sách có mã ID =  " + bkId + "  đã được cập nhật.", " Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            txtbkName.Clear();
+                            txtbkAuthor.Clear();
+                            txtbkPublication.Clear();
+                            txtbkDate.Clear();
+                            txtbkPrice.Clear();
+                            txtbkQuantity.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Cập nhật không thành công!\nVui lòng kiểm tra lại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    } catch (Exception ex)
+                    {
+                        MessageBox.Show("Cập nhật không thành công!\nVui lòng kiểm tra lại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                    
@@ -183,6 +188,7 @@ namespace LMSProject
             {
                 if (MessageBox.Show("Dữ liệu sẽ bị xoá!\nBạn có chắn chắn không?", "Xoá sách", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)==DialogResult.OK)
                 {
+
                     SqlCommand cmd = new SqlCommand("Delete from tblBookInfos where bkId =" + rowId + " ", con);
                     con.Open();
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);

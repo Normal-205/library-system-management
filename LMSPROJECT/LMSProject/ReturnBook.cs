@@ -25,7 +25,7 @@ namespace LMSProject
 
         private void circularPicture1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void jFlatButton5_Click(object sender, EventArgs e)

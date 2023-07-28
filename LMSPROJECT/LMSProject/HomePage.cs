@@ -46,15 +46,26 @@ namespace LMSProject
 
         private void circularPicture1_Click_1(object sender, EventArgs e)
         {
+            // Create a list to store the forms to close
+            List<Form> formsToClose = new List<Form>();
+
+            // Add all open forms to the list
             foreach (Form form in Application.OpenForms)
             {
-                if (form != this) // Exclude the current form from being closed
+                if (form != this) // Exclude the current form from the list
                 {
-                    form.Close();
+                    formsToClose.Add(form);
                 }
             }
 
-            this.Close(); // Close the current form (the form containing the button)
+            // Close all forms in the list
+            foreach (Form form in formsToClose)
+            {
+                form.Close();
+            }
+
+            // Close the current form (this form)
+            this.Close();
         }
 
     }

@@ -147,7 +147,7 @@ namespace LMSProject
 
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Thêm dữ liệu thành công.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Cập nhật dữ liệu thành công.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else
                         {
