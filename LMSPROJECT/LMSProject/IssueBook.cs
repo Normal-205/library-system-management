@@ -47,11 +47,7 @@ namespace LMSProject
         {
             
         }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void btnStRefresh_Click(object sender, EventArgs e)
         {
@@ -112,8 +108,8 @@ namespace LMSProject
                     String CS = "data source=.; database = LMSDB; integrated security=SSPI";
                     using (SqlConnection con = new SqlConnection(CS))
                     {   //Int64 contact = Int64.Parse(txtstContact.Text);
-                            SqlCommand cmd = new SqlCommand("insert into tblIssueBooks(stName,stNumber,stDepartment,stSemester,stContact,stEmail,bkName,bkIssueDate) values('" + txtStName.Text + "', '" + txtStNumber.Text + "'," +
-                           "'" + txtStDepartment.Text + "', '" + txtStSemester.Text + "', " + Int64.Parse(txtStContact.Text) + ", '" + txtStEmail.Text + "', '"+ comboBoxBK.Text +"' ,'"+ dateTimePicker.Text +"') ", con);
+                            SqlCommand cmd = new SqlCommand("insert into tblIssueBooks(stName,stNumber,stDepartment,stSemester,stContact,stEmail,bkName,bkIssueDate) values(N'" + txtStName.Text + "', N'" + txtStNumber.Text + "',N" +
+                           "'" + txtStDepartment.Text + "', N'" + txtStSemester.Text + "', " + Int64.Parse(txtStContact.Text) + ", '" + txtStEmail.Text + "', N'"+ comboBoxBK.Text +"' ,'"+ dateTimePicker.Text +"') ", con);
                             con.Open();
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Mượn sách thành công.", "Success" , MessageBoxButtons.OK , MessageBoxIcon.Information);
@@ -124,15 +120,12 @@ namespace LMSProject
                             txtStContact.Clear();
                             txtStEmail.Clear();
                             comboBoxBK.Text = " ";
-
-
                     }
                 }
                 else
                 {
                     MessageBox.Show("Không có sách nào được mượn hoặc "+ " sinh viên có mã  "+stNumber+" đã đạt giới hạn mượn sách. ", "Lỗi" ,MessageBoxButtons.OK , MessageBoxIcon.Error);
                 }
-
             }
             else
             {

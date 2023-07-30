@@ -66,18 +66,16 @@ namespace LMSProject
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.menuStrip1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1164, 129);
+            this.panel3.Size = new System.Drawing.Size(873, 105);
             this.panel3.TabIndex = 5;
             // 
             // circularPicture1
             // 
             this.circularPicture1.Image = ((System.Drawing.Image)(resources.GetObject("circularPicture1.Image")));
-            this.circularPicture1.Location = new System.Drawing.Point(1075, 43);
-            this.circularPicture1.Margin = new System.Windows.Forms.Padding(4);
+            this.circularPicture1.Location = new System.Drawing.Point(801, 25);
             this.circularPicture1.Name = "circularPicture1";
-            this.circularPicture1.Size = new System.Drawing.Size(72, 59);
+            this.circularPicture1.Size = new System.Drawing.Size(59, 58);
             this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture1.TabIndex = 9;
             this.circularPicture1.TabStop = false;
@@ -88,20 +86,18 @@ namespace LMSProject
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(445, 43);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(334, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(273, 45);
+            this.label3.Size = new System.Drawing.Size(215, 36);
             this.label3.TabIndex = 7;
             this.label3.Text = "Tìm kiếm sách";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 17);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(71, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -111,8 +107,9 @@ namespace LMSProject
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(567, 58);
+            this.menuStrip1.Location = new System.Drawing.Point(425, 47);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(202, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -147,8 +144,8 @@ namespace LMSProject
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Location = new System.Drawing.Point(165, 275);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.dataGridView1.Location = new System.Drawing.Point(124, 223);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -161,7 +158,7 @@ namespace LMSProject
             this.dataGridView1.RowHeadersWidth = 50;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.Size = new System.Drawing.Size(834, 475);
+            this.dataGridView1.Size = new System.Drawing.Size(626, 386);
             this.dataGridView1.TabIndex = 6;
             // 
             // ID
@@ -226,13 +223,13 @@ namespace LMSProject
             this.btnRefreshbkname.ImageLeft = null;
             this.btnRefreshbkname.ImageRight = null;
             this.btnRefreshbkname.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnRefreshbkname.Location = new System.Drawing.Point(721, 182);
-            this.btnRefreshbkname.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRefreshbkname.Location = new System.Drawing.Point(541, 148);
+            this.btnRefreshbkname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefreshbkname.Name = "btnRefreshbkname";
             this.btnRefreshbkname.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
             this.btnRefreshbkname.PaddingRightPicture = new System.Windows.Forms.Padding(0);
             this.btnRefreshbkname.RightPictureColor = System.Drawing.Color.Transparent;
-            this.btnRefreshbkname.Size = new System.Drawing.Size(130, 35);
+            this.btnRefreshbkname.Size = new System.Drawing.Size(98, 28);
             this.btnRefreshbkname.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.Normal;
             this.btnRefreshbkname.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnRefreshbkname.TabIndex = 19;
@@ -241,10 +238,9 @@ namespace LMSProject
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel4.Location = new System.Drawing.Point(453, 213);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(340, 173);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(208, 2);
+            this.panel4.Size = new System.Drawing.Size(156, 2);
             this.panel4.TabIndex = 18;
             // 
             // txtBookName
@@ -252,10 +248,9 @@ namespace LMSProject
             this.txtBookName.BackColor = System.Drawing.SystemColors.Menu;
             this.txtBookName.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtBookName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.txtBookName.Location = new System.Drawing.Point(453, 185);
-            this.txtBookName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBookName.Location = new System.Drawing.Point(340, 150);
             this.txtBookName.Name = "txtBookName";
-            this.txtBookName.Size = new System.Drawing.Size(207, 27);
+            this.txtBookName.Size = new System.Drawing.Size(156, 23);
             this.txtBookName.TabIndex = 17;
             this.txtBookName.TextChanged += new System.EventHandler(this.txtBookName_TextChanged);
             // 
@@ -265,30 +260,28 @@ namespace LMSProject
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(318, 182);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(238, 148);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 35);
+            this.label4.Size = new System.Drawing.Size(90, 27);
             this.label4.TabIndex = 16;
             this.label4.Text = "Tên sách";
             // 
             // circularPicture3
             // 
             this.circularPicture3.Image = ((System.Drawing.Image)(resources.GetObject("circularPicture3.Image")));
-            this.circularPicture3.Location = new System.Drawing.Point(208, 153);
-            this.circularPicture3.Margin = new System.Windows.Forms.Padding(4);
+            this.circularPicture3.Location = new System.Drawing.Point(156, 124);
             this.circularPicture3.Name = "circularPicture3";
-            this.circularPicture3.Size = new System.Drawing.Size(102, 92);
+            this.circularPicture3.Size = new System.Drawing.Size(76, 75);
             this.circularPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture3.TabIndex = 15;
             this.circularPicture3.TabStop = false;
             // 
             // BookSearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1163, 786);
+            this.ClientSize = new System.Drawing.Size(872, 639);
             this.Controls.Add(this.btnRefreshbkname);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtBookName);
@@ -297,7 +290,6 @@ namespace LMSProject
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BookSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BookSearch";

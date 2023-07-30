@@ -20,7 +20,7 @@ namespace LMSProject
 
         private void circularPicture1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void CompleteBookDetail_Load(object sender, EventArgs e)
@@ -42,7 +42,6 @@ namespace LMSProject
                 DataSet dataSet1 = new DataSet();
                 da1.Fill(dataSet1);
                 dataGridView2.DataSource = dataSet1.Tables[0];
-
             }
         }
     }

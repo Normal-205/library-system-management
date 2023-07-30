@@ -29,7 +29,7 @@ namespace LMSProject
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                 DataSet dataset = new DataSet();
                 dataAdapter.Fill(dataset);
-                // Subscribe to the CellFormatting event before setting the DataSource
+                // Call to the CellFormatting event before setting the DataSource
                 dataGridView1.CellFormatting += dataGridView1_CellFormatting;
                 dataGridView1.DataSource = dataset.Tables[0];
             }
@@ -50,49 +50,39 @@ namespace LMSProject
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void circularPicture1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         int bkId;
         Int64 rowId;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(dataGridView1.Rows[e.RowIndex].Cells[0].Value != "")
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
-                
                 bkId = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                String CS = "data source=.; database = LMSDB; integrated security=SSPI";
+                using (SqlConnection con = new SqlConnection(CS))
+                {
+
+                    SqlCommand cmd = new SqlCommand("select * from tblBookInfos where bkId ='" + bkId + "' ", con);
+                    con.Open();
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                    DataSet dataset = new DataSet();
+                    dataAdapter.Fill(dataset);
+                    rowId = Int64.Parse(dataset.Tables[0].Rows[0][0].ToString());
+                    txtbkName.Text = dataset.Tables[0].Rows[0][1].ToString();
+                    txtbkAuthor.Text = dataset.Tables[0].Rows[0][2].ToString();
+                    txtbkPublication.Text = dataset.Tables[0].Rows[0][3].ToString();
+                    txtbkDate.Text = dataset.Tables[0].Rows[0][4].ToString();
+                    txtbkPrice.Text = dataset.Tables[0].Rows[0][5].ToString();
+                    txtbkQuantity.Text = dataset.Tables[0].Rows[0][6].ToString();
+                }
             }
             else
             {
                 MessageBox.Show("Vui lòng chọn một dòng.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            String CS = "data source=.; database = LMSDB; integrated security=SSPI";
-            using (SqlConnection con = new SqlConnection(CS))
-            {
-
-                SqlCommand cmd = new SqlCommand("select * from tblBookInfos where bkId ='"+ bkId +"' ", con);
-                con.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-                DataSet dataset = new DataSet();
-                dataAdapter.Fill(dataset);
-                rowId = Int64.Parse(dataset.Tables[0].Rows[0][0].ToString());
-                txtbkName.Text = dataset.Tables[0].Rows[0][1].ToString();
-                txtbkAuthor.Text=dataset.Tables[0].Rows[0][2].ToString();
-                txtbkPublication.Text = dataset.Tables[0].Rows[0][3].ToString();
-                txtbkDate.Text = dataset.Tables[0].Rows[0][4].ToString();
-                txtbkPrice.Text = dataset.Tables[0].Rows[0][5].ToString();
-                txtbkQuantity.Text= dataset.Tables[0].Rows[0][6].ToString();
             }
         }
 
@@ -104,7 +94,7 @@ namespace LMSProject
                 using (SqlConnection con = new SqlConnection(CS))
                 {
 
-                    SqlCommand cmd = new SqlCommand("select * from tblBookInfos where bkName like N'"+ txtBookName.Text +"%'", con);
+                    SqlCommand cmd = new SqlCommand("select * from tblBookInfos where bkName like N'" + txtBookName.Text + "%'", con);
                     con.Open();
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                     DataSet dataset = new DataSet();
@@ -172,12 +162,13 @@ namespace LMSProject
                         {
                             MessageBox.Show("Cập nhật không thành công!\nVui lòng kiểm tra lại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
-                    } catch (Exception ex)
+                    }
+                    catch (Exception ex)
                     {
                         MessageBox.Show("Cập nhật không thành công!\nVui lòng kiểm tra lại!", "Cảnh báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
-                   
+
             }
         }
 
@@ -186,7 +177,7 @@ namespace LMSProject
             String CS = "data source=.; database = LMSDB; integrated security=SSPI";
             using (SqlConnection con = new SqlConnection(CS))
             {
-                if (MessageBox.Show("Dữ liệu sẽ bị xoá!\nBạn có chắn chắn không?", "Xoá sách", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)==DialogResult.OK)
+                if (MessageBox.Show("Dữ liệu sẽ bị xoá!\nBạn có chắn chắn không?", "Xoá sách", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
 
                     SqlCommand cmd = new SqlCommand("Delete from tblBookInfos where bkId =" + rowId + " ", con);
@@ -194,7 +185,7 @@ namespace LMSProject
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                     DataSet dataset = new DataSet();
                     dataAdapter.Fill(dataset);
-                    MessageBox.Show("Sách có mã ID =  " + bkId +  " đã xoá thành công.", " Success" + MessageBoxButtons.OK + MessageBoxIcon.Information);
+                    MessageBox.Show("Sách có mã ID =  " + bkId + " đã xoá thành công.", " Success" + MessageBoxButtons.OK + MessageBoxIcon.Information);
                     //clearing textboxes
                     txtbkName.Clear();
                     txtbkAuthor.Clear();

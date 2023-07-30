@@ -78,9 +78,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1579, 74);
+            this.panel1.Size = new System.Drawing.Size(1184, 60);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -92,9 +91,8 @@
             this.panel3.Controls.Add(this.circularPicture3);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1579, 74);
+            this.panel3.Size = new System.Drawing.Size(1184, 60);
             this.panel3.TabIndex = 2;
             // 
             // label3
@@ -102,10 +100,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(569, 23);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(427, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(602, 33);
+            this.label3.Size = new System.Drawing.Size(480, 26);
             this.label3.TabIndex = 6;
             this.label3.Text = "Chào mừng thầy/ cô. Chúc thầy/ cô có một ngày vui vẻ";
             // 
@@ -114,20 +111,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(81, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(61, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 24);
+            this.label1.Size = new System.Drawing.Size(135, 19);
             this.label1.TabIndex = 4;
             this.label1.Text = "Quản thị hệ thống";
             // 
             // circularPicture3
             // 
             this.circularPicture3.Image = ((System.Drawing.Image)(resources.GetObject("circularPicture3.Image")));
-            this.circularPicture3.Location = new System.Drawing.Point(16, 5);
-            this.circularPicture3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularPicture3.Location = new System.Drawing.Point(12, 4);
             this.circularPicture3.Name = "circularPicture3";
-            this.circularPicture3.Size = new System.Drawing.Size(57, 59);
+            this.circularPicture3.Size = new System.Drawing.Size(43, 48);
             this.circularPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture3.TabIndex = 3;
             this.circularPicture3.TabStop = false;
@@ -135,10 +130,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel2.Location = new System.Drawing.Point(0, 71);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(0, 58);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(267, 581);
+            this.panel2.Size = new System.Drawing.Size(200, 472);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -147,20 +141,18 @@
             this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.menuStrip1);
-            this.panel4.Location = new System.Drawing.Point(0, 81);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(0, 66);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(376, 793);
+            this.panel4.Size = new System.Drawing.Size(282, 644);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(110, 35);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(82, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 102);
+            this.pictureBox1.Size = new System.Drawing.Size(86, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -181,9 +173,10 @@
             this.completeBookDetailToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(12, 167);
+            this.menuStrip1.Location = new System.Drawing.Point(9, 136);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(295, 574);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(221, 466);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -196,7 +189,7 @@
             this.dashboardToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.dashboardToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 10);
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(266, 44);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(196, 44);
             this.dashboardToolStripMenuItem.Text = "Trang chủ";
             this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
@@ -212,7 +205,7 @@
             this.booksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.booksToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 10);
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(266, 54);
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(196, 54);
             this.booksToolStripMenuItem.Text = "Quản lý sách";
             this.booksToolStripMenuItem.Click += new System.EventHandler(this.circularPicture1_Click);
             // 
@@ -223,7 +216,7 @@
             this.addNewBookToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewBookToolStripMenuItem.Image")));
             this.addNewBookToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewBookToolStripMenuItem.Name = "addNewBookToolStripMenuItem";
-            this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(261, 56);
+            this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(231, 56);
             this.addNewBookToolStripMenuItem.Text = "Thêm sách mới";
             this.addNewBookToolStripMenuItem.Click += new System.EventHandler(this.addNewBookToolStripMenuItem_Click);
             // 
@@ -234,7 +227,7 @@
             this.viewBooksToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewBooksToolStripMenuItem.Image")));
             this.viewBooksToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewBooksToolStripMenuItem.Name = "viewBooksToolStripMenuItem";
-            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(261, 56);
+            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(231, 56);
             this.viewBooksToolStripMenuItem.Text = "Danh sách ấn phẩm";
             this.viewBooksToolStripMenuItem.Click += new System.EventHandler(this.viewBooksToolStripMenuItem_Click);
             // 
@@ -250,7 +243,7 @@
             this.studentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.studentToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 10);
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
-            this.studentToolStripMenuItem.Size = new System.Drawing.Size(266, 54);
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(196, 54);
             this.studentToolStripMenuItem.Text = "Quản lý SV";
             this.studentToolStripMenuItem.Click += new System.EventHandler(this.studentToolStripMenuItem_Click);
             // 
@@ -261,7 +254,7 @@
             this.addNewStudentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addNewStudentToolStripMenuItem.Image")));
             this.addNewStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
-            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
+            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(221, 56);
             this.addNewStudentToolStripMenuItem.Text = "Thêm mới SV";
             this.addNewStudentToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentToolStripMenuItem_Click);
             // 
@@ -272,7 +265,7 @@
             this.viewStudentInfoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewStudentInfoToolStripMenuItem.Image")));
             this.viewStudentInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewStudentInfoToolStripMenuItem.Name = "viewStudentInfoToolStripMenuItem";
-            this.viewStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
+            this.viewStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(221, 56);
             this.viewStudentInfoToolStripMenuItem.Text = "Xem thông tin SV";
             this.viewStudentInfoToolStripMenuItem.Click += new System.EventHandler(this.viewStudentInfoToolStripMenuItem_Click);
             // 
@@ -285,7 +278,7 @@
             this.issueBookToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.issueBookToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 10);
             this.issueBookToolStripMenuItem.Name = "issueBookToolStripMenuItem";
-            this.issueBookToolStripMenuItem.Size = new System.Drawing.Size(266, 54);
+            this.issueBookToolStripMenuItem.Size = new System.Drawing.Size(196, 54);
             this.issueBookToolStripMenuItem.Text = "Mượn sách";
             this.issueBookToolStripMenuItem.Click += new System.EventHandler(this.issueBookToolStripMenuItem_Click);
             // 
@@ -298,7 +291,7 @@
             this.returNBookToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.returNBookToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 10);
             this.returNBookToolStripMenuItem.Name = "returNBookToolStripMenuItem";
-            this.returNBookToolStripMenuItem.Size = new System.Drawing.Size(266, 54);
+            this.returNBookToolStripMenuItem.Size = new System.Drawing.Size(196, 54);
             this.returNBookToolStripMenuItem.Text = "Trả sách";
             this.returNBookToolStripMenuItem.Click += new System.EventHandler(this.returNBookToolStripMenuItem_Click);
             // 
@@ -311,7 +304,7 @@
             this.completeBookDetailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.completeBookDetailToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 10);
             this.completeBookDetailToolStripMenuItem.Name = "completeBookDetailToolStripMenuItem";
-            this.completeBookDetailToolStripMenuItem.Size = new System.Drawing.Size(266, 54);
+            this.completeBookDetailToolStripMenuItem.Size = new System.Drawing.Size(196, 54);
             this.completeBookDetailToolStripMenuItem.Text = "Lịch sử sách mượn / trả";
             this.completeBookDetailToolStripMenuItem.Click += new System.EventHandler(this.completeBookDetailToolStripMenuItem_Click);
             // 
@@ -324,17 +317,16 @@
             this.logOutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.logOutToolStripMenuItem.Margin = new System.Windows.Forms.Padding(20, 0, 0, 10);
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(266, 54);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(196, 54);
             this.logOutToolStripMenuItem.Text = "Đăng xuất";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(645, 265);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(484, 134);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(163, 122);
+            this.pictureBox2.Size = new System.Drawing.Size(173, 149);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -344,22 +336,20 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(669, 404);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(522, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 26);
+            this.label4.Size = new System.Drawing.Size(109, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Tổng số sách";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(645, 485);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(484, 403);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 119);
+            this.pictureBox3.Size = new System.Drawing.Size(173, 149);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -369,22 +359,20 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(669, 625);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(500, 572);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 26);
+            this.label5.Size = new System.Drawing.Size(147, 25);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Total Book Issue";
+            this.label5.Text = "Số sách đã mượn";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1115, 482);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(841, 403);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(163, 122);
+            this.pictureBox5.Size = new System.Drawing.Size(158, 149);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
@@ -394,36 +382,33 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1156, 625);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(845, 572);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 26);
+            this.label6.Size = new System.Drawing.Size(143, 25);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Total User";
+            this.label6.Text = "Tổng người dùng";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1139, 404);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(843, 303);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 26);
+            this.label7.Size = new System.Drawing.Size(145, 25);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Total Student";
+            this.label7.Text = "Tổng số sinh viên";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1115, 265);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(841, 130);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(163, 122);
+            this.pictureBox4.Size = new System.Drawing.Size(158, 153);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
@@ -438,8 +423,7 @@
             this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar1.InnerMargin = 2;
             this.circularProgressBar1.InnerWidth = -1;
-            this.circularProgressBar1.Location = new System.Drawing.Point(540, 332);
-            this.circularProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularProgressBar1.Location = new System.Drawing.Point(387, 216);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
             this.circularProgressBar1.OuterColor = System.Drawing.Color.White;
@@ -448,7 +432,7 @@
             this.circularProgressBar1.ProgressColor = System.Drawing.Color.Blue;
             this.circularProgressBar1.ProgressWidth = 10;
             this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.circularProgressBar1.Size = new System.Drawing.Size(121, 113);
+            this.circularProgressBar1.Size = new System.Drawing.Size(91, 92);
             this.circularProgressBar1.StartAngle = 270;
             this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -472,8 +456,7 @@
             this.circularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar2.InnerMargin = 2;
             this.circularProgressBar2.InnerWidth = -1;
-            this.circularProgressBar2.Location = new System.Drawing.Point(1009, 332);
-            this.circularProgressBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularProgressBar2.Location = new System.Drawing.Point(739, 216);
             this.circularProgressBar2.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar2.Name = "circularProgressBar2";
             this.circularProgressBar2.OuterColor = System.Drawing.Color.White;
@@ -482,7 +465,7 @@
             this.circularProgressBar2.ProgressColor = System.Drawing.Color.Blue;
             this.circularProgressBar2.ProgressWidth = 10;
             this.circularProgressBar2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.circularProgressBar2.Size = new System.Drawing.Size(121, 113);
+            this.circularProgressBar2.Size = new System.Drawing.Size(91, 92);
             this.circularProgressBar2.StartAngle = 270;
             this.circularProgressBar2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar2.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -506,8 +489,7 @@
             this.circularProgressBar3.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar3.InnerMargin = 2;
             this.circularProgressBar3.InnerWidth = -1;
-            this.circularProgressBar3.Location = new System.Drawing.Point(1009, 555);
-            this.circularProgressBar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularProgressBar3.Location = new System.Drawing.Point(739, 470);
             this.circularProgressBar3.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar3.Name = "circularProgressBar3";
             this.circularProgressBar3.OuterColor = System.Drawing.Color.White;
@@ -516,7 +498,7 @@
             this.circularProgressBar3.ProgressColor = System.Drawing.Color.Blue;
             this.circularProgressBar3.ProgressWidth = 10;
             this.circularProgressBar3.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.circularProgressBar3.Size = new System.Drawing.Size(121, 113);
+            this.circularProgressBar3.Size = new System.Drawing.Size(91, 92);
             this.circularProgressBar3.StartAngle = 270;
             this.circularProgressBar3.SubscriptColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.circularProgressBar3.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -540,8 +522,7 @@
             this.circularProgressBar4.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.circularProgressBar4.InnerMargin = 2;
             this.circularProgressBar4.InnerWidth = -1;
-            this.circularProgressBar4.Location = new System.Drawing.Point(540, 555);
-            this.circularProgressBar4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularProgressBar4.Location = new System.Drawing.Point(387, 470);
             this.circularProgressBar4.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar4.Name = "circularProgressBar4";
             this.circularProgressBar4.OuterColor = System.Drawing.Color.White;
@@ -550,7 +531,7 @@
             this.circularProgressBar4.ProgressColor = System.Drawing.Color.Blue;
             this.circularProgressBar4.ProgressWidth = 10;
             this.circularProgressBar4.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.circularProgressBar4.Size = new System.Drawing.Size(121, 113);
+            this.circularProgressBar4.Size = new System.Drawing.Size(91, 92);
             this.circularProgressBar4.StartAngle = 270;
             this.circularProgressBar4.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.circularProgressBar4.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -567,12 +548,12 @@
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1580, 873);
-            this.Controls.Add(this.circularProgressBar4);
+            this.ClientSize = new System.Drawing.Size(1185, 709);
             this.Controls.Add(this.circularProgressBar3);
+            this.Controls.Add(this.circularProgressBar4);
             this.Controls.Add(this.circularProgressBar2);
             this.Controls.Add(this.circularProgressBar1);
             this.Controls.Add(this.pictureBox5);
@@ -587,7 +568,6 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";

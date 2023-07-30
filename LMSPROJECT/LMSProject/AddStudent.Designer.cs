@@ -40,27 +40,27 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.txtstClass = new System.Windows.Forms.TextBox();
-            this.btnStInfoRefrsh = new FlatButton.JFlatButton();
-            this.btnSaveStInfo = new FlatButton.JFlatButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.txtstEmail = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.txtstContact = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txtstDepartment = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtstNumber = new System.Windows.Forms.TextBox();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.txtstName = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.txtstNumber = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtstDepartment = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtstContact = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtstEmail = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnSaveStInfo = new FlatButton.JFlatButton();
+            this.btnStInfoRefrsh = new FlatButton.JFlatButton();
+            this.txtstClass = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -123,7 +123,7 @@
             this.label1.Location = new System.Drawing.Point(591, 57);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 19);
+            this.label1.Size = new System.Drawing.Size(39, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -133,7 +133,7 @@
             this.circularPicture1.Location = new System.Drawing.Point(967, 14);
             this.circularPicture1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.circularPicture1.Name = "circularPicture1";
-            this.circularPicture1.Size = new System.Drawing.Size(64, 70);
+            this.circularPicture1.Size = new System.Drawing.Size(74, 70);
             this.circularPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularPicture1.TabIndex = 8;
             this.circularPicture1.TabStop = false;
@@ -147,7 +147,7 @@
             this.label2.Location = new System.Drawing.Point(375, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(349, 49);
+            this.label2.Size = new System.Drawing.Size(278, 39);
             this.label2.TabIndex = 6;
             this.label2.Text = "Thêm mới sinh viên";
             // 
@@ -197,6 +197,264 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // txtstName
+            // 
+            this.txtstName.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtstName.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtstName.Location = new System.Drawing.Point(260, 31);
+            this.txtstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtstName.Name = "txtstName";
+            this.txtstName.Size = new System.Drawing.Size(216, 23);
+            this.txtstName.TabIndex = 15;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.panel8.Location = new System.Drawing.Point(260, 63);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(217, 2);
+            this.panel8.TabIndex = 18;
+            // 
+            // txtstNumber
+            // 
+            this.txtstNumber.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtstNumber.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtstNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtstNumber.Location = new System.Drawing.Point(260, 97);
+            this.txtstNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtstNumber.Name = "txtstNumber";
+            this.txtstNumber.Size = new System.Drawing.Size(216, 23);
+            this.txtstNumber.TabIndex = 14;
+            this.txtstNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtstNumber_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.label6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(111, 32);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 23);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Tên Sinh Viên";
+            // 
+            // txtstDepartment
+            // 
+            this.txtstDepartment.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtstDepartment.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtstDepartment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtstDepartment.Location = new System.Drawing.Point(260, 170);
+            this.txtstDepartment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtstDepartment.Name = "txtstDepartment";
+            this.txtstDepartment.Size = new System.Drawing.Size(216, 23);
+            this.txtstDepartment.TabIndex = 13;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.panel7.Location = new System.Drawing.Point(260, 131);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(217, 2);
+            this.panel7.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.label5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(111, 103);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 23);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Mã Sinh Viên";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.panel6.Location = new System.Drawing.Point(260, 202);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(217, 2);
+            this.panel6.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.label3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(111, 174);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 23);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Khoa";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.label9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(558, 32);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 23);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Lớp Tín Chỉ";
+            // 
+            // txtstContact
+            // 
+            this.txtstContact.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtstContact.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtstContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtstContact.Location = new System.Drawing.Point(729, 103);
+            this.txtstContact.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtstContact.Name = "txtstContact";
+            this.txtstContact.Size = new System.Drawing.Size(216, 23);
+            this.txtstContact.TabIndex = 24;
+            this.txtstContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtstContact_KeyPress);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.panel10.Location = new System.Drawing.Point(729, 131);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(217, 2);
+            this.panel10.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.label8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(558, 101);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(114, 23);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Số điện thoại";
+            // 
+            // txtstEmail
+            // 
+            this.txtstEmail.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtstEmail.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtstEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtstEmail.Location = new System.Drawing.Point(729, 174);
+            this.txtstEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtstEmail.Name = "txtstEmail";
+            this.txtstEmail.Size = new System.Drawing.Size(216, 23);
+            this.txtstEmail.TabIndex = 27;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.panel9.Location = new System.Drawing.Point(729, 202);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(217, 2);
+            this.panel9.TabIndex = 28;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.label7.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(558, 177);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(131, 23);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Email Sinh Viên";
+            // 
+            // btnSaveStInfo
+            // 
+            this.btnSaveStInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSaveStInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSaveStInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSaveStInfo.ButtonText = "Lưu";
+            this.btnSaveStInfo.CausesValidation = false;
+            this.btnSaveStInfo.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btnSaveStInfo.ErrorImageLeft")));
+            this.btnSaveStInfo.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btnSaveStInfo.ErrorImageRight")));
+            this.btnSaveStInfo.FocusBackground = System.Drawing.Color.Empty;
+            this.btnSaveStInfo.FocusFontColor = System.Drawing.Color.Empty;
+            this.btnSaveStInfo.ForeColors = System.Drawing.Color.White;
+            this.btnSaveStInfo.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.btnSaveStInfo.HoverFontColor = System.Drawing.Color.White;
+            this.btnSaveStInfo.ImageLeft = null;
+            this.btnSaveStInfo.ImageRight = null;
+            this.btnSaveStInfo.LeftPictureColor = System.Drawing.Color.Transparent;
+            this.btnSaveStInfo.Location = new System.Drawing.Point(677, 235);
+            this.btnSaveStInfo.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSaveStInfo.Name = "btnSaveStInfo";
+            this.btnSaveStInfo.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
+            this.btnSaveStInfo.PaddingRightPicture = new System.Windows.Forms.Padding(0);
+            this.btnSaveStInfo.RightPictureColor = System.Drawing.Color.Transparent;
+            this.btnSaveStInfo.Size = new System.Drawing.Size(118, 56);
+            this.btnSaveStInfo.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.btnSaveStInfo.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnSaveStInfo.TabIndex = 31;
+            this.btnSaveStInfo.Click += new System.EventHandler(this.btnSaveStInfo_Click);
+            // 
+            // btnStInfoRefrsh
+            // 
+            this.btnStInfoRefrsh.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnStInfoRefrsh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.btnStInfoRefrsh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
+            this.btnStInfoRefrsh.ButtonText = "Làm mới";
+            this.btnStInfoRefrsh.CausesValidation = false;
+            this.btnStInfoRefrsh.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btnStInfoRefrsh.ErrorImageLeft")));
+            this.btnStInfoRefrsh.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btnStInfoRefrsh.ErrorImageRight")));
+            this.btnStInfoRefrsh.FocusBackground = System.Drawing.Color.Empty;
+            this.btnStInfoRefrsh.FocusFontColor = System.Drawing.Color.Empty;
+            this.btnStInfoRefrsh.ForeColors = System.Drawing.Color.White;
+            this.btnStInfoRefrsh.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.btnStInfoRefrsh.HoverFontColor = System.Drawing.Color.White;
+            this.btnStInfoRefrsh.ImageLeft = null;
+            this.btnStInfoRefrsh.ImageRight = null;
+            this.btnStInfoRefrsh.LeftPictureColor = System.Drawing.Color.Transparent;
+            this.btnStInfoRefrsh.Location = new System.Drawing.Point(828, 235);
+            this.btnStInfoRefrsh.Margin = new System.Windows.Forms.Padding(6);
+            this.btnStInfoRefrsh.Name = "btnStInfoRefrsh";
+            this.btnStInfoRefrsh.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
+            this.btnStInfoRefrsh.PaddingRightPicture = new System.Windows.Forms.Padding(0);
+            this.btnStInfoRefrsh.RightPictureColor = System.Drawing.Color.Transparent;
+            this.btnStInfoRefrsh.Size = new System.Drawing.Size(118, 56);
+            this.btnStInfoRefrsh.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.btnStInfoRefrsh.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnStInfoRefrsh.TabIndex = 31;
+            this.btnStInfoRefrsh.Click += new System.EventHandler(this.btnStInfoRefrsh_Click);
+            // 
+            // txtstClass
+            // 
+            this.txtstClass.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtstClass.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtstClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.txtstClass.Location = new System.Drawing.Point(729, 34);
+            this.txtstClass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtstClass.Name = "txtstClass";
+            this.txtstClass.Size = new System.Drawing.Size(216, 23);
+            this.txtstClass.TabIndex = 32;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.panel11.Location = new System.Drawing.Point(729, 63);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(217, 2);
+            this.panel11.TabIndex = 33;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -228,267 +486,9 @@
             this.panel5.Size = new System.Drawing.Size(1013, 318);
             this.panel5.TabIndex = 17;
             // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel11.Location = new System.Drawing.Point(770, 63);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(217, 2);
-            this.panel11.TabIndex = 33;
-            // 
-            // txtstClass
-            // 
-            this.txtstClass.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtstClass.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtstClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.txtstClass.Location = new System.Drawing.Point(770, 31);
-            this.txtstClass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtstClass.Name = "txtstClass";
-            this.txtstClass.Size = new System.Drawing.Size(216, 27);
-            this.txtstClass.TabIndex = 32;
-            // 
-            // btnStInfoRefrsh
-            // 
-            this.btnStInfoRefrsh.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnStInfoRefrsh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.btnStInfoRefrsh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.btnStInfoRefrsh.ButtonText = "Làm mới";
-            this.btnStInfoRefrsh.CausesValidation = false;
-            this.btnStInfoRefrsh.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btnStInfoRefrsh.ErrorImageLeft")));
-            this.btnStInfoRefrsh.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btnStInfoRefrsh.ErrorImageRight")));
-            this.btnStInfoRefrsh.FocusBackground = System.Drawing.Color.Empty;
-            this.btnStInfoRefrsh.FocusFontColor = System.Drawing.Color.Empty;
-            this.btnStInfoRefrsh.ForeColors = System.Drawing.Color.White;
-            this.btnStInfoRefrsh.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.btnStInfoRefrsh.HoverFontColor = System.Drawing.Color.White;
-            this.btnStInfoRefrsh.ImageLeft = null;
-            this.btnStInfoRefrsh.ImageRight = null;
-            this.btnStInfoRefrsh.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnStInfoRefrsh.Location = new System.Drawing.Point(867, 235);
-            this.btnStInfoRefrsh.Margin = new System.Windows.Forms.Padding(6);
-            this.btnStInfoRefrsh.Name = "btnStInfoRefrsh";
-            this.btnStInfoRefrsh.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
-            this.btnStInfoRefrsh.PaddingRightPicture = new System.Windows.Forms.Padding(0);
-            this.btnStInfoRefrsh.RightPictureColor = System.Drawing.Color.Transparent;
-            this.btnStInfoRefrsh.Size = new System.Drawing.Size(119, 56);
-            this.btnStInfoRefrsh.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.btnStInfoRefrsh.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnStInfoRefrsh.TabIndex = 31;
-            this.btnStInfoRefrsh.Click += new System.EventHandler(this.btnStInfoRefrsh_Click);
-            // 
-            // btnSaveStInfo
-            // 
-            this.btnSaveStInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSaveStInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSaveStInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSaveStInfo.ButtonText = "Lưu";
-            this.btnSaveStInfo.CausesValidation = false;
-            this.btnSaveStInfo.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btnSaveStInfo.ErrorImageLeft")));
-            this.btnSaveStInfo.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btnSaveStInfo.ErrorImageRight")));
-            this.btnSaveStInfo.FocusBackground = System.Drawing.Color.Empty;
-            this.btnSaveStInfo.FocusFontColor = System.Drawing.Color.Empty;
-            this.btnSaveStInfo.ForeColors = System.Drawing.Color.White;
-            this.btnSaveStInfo.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.btnSaveStInfo.HoverFontColor = System.Drawing.Color.White;
-            this.btnSaveStInfo.ImageLeft = null;
-            this.btnSaveStInfo.ImageRight = null;
-            this.btnSaveStInfo.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnSaveStInfo.Location = new System.Drawing.Point(716, 235);
-            this.btnSaveStInfo.Margin = new System.Windows.Forms.Padding(6);
-            this.btnSaveStInfo.Name = "btnSaveStInfo";
-            this.btnSaveStInfo.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
-            this.btnSaveStInfo.PaddingRightPicture = new System.Windows.Forms.Padding(0);
-            this.btnSaveStInfo.RightPictureColor = System.Drawing.Color.Transparent;
-            this.btnSaveStInfo.Size = new System.Drawing.Size(116, 56);
-            this.btnSaveStInfo.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.btnSaveStInfo.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnSaveStInfo.TabIndex = 31;
-            this.btnSaveStInfo.Click += new System.EventHandler(this.btnSaveStInfo_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(528, 176);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 24);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Email Sinh Viên";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel9.Location = new System.Drawing.Point(770, 203);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(217, 2);
-            this.panel9.TabIndex = 28;
-            // 
-            // txtstEmail
-            // 
-            this.txtstEmail.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtstEmail.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtstEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.txtstEmail.Location = new System.Drawing.Point(770, 171);
-            this.txtstEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtstEmail.Name = "txtstEmail";
-            this.txtstEmail.Size = new System.Drawing.Size(216, 27);
-            this.txtstEmail.TabIndex = 27;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(528, 100);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 24);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "Số điện thoại";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel10.Location = new System.Drawing.Point(770, 132);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(217, 2);
-            this.panel10.TabIndex = 25;
-            // 
-            // txtstContact
-            // 
-            this.txtstContact.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtstContact.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtstContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.txtstContact.Location = new System.Drawing.Point(770, 100);
-            this.txtstContact.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtstContact.Name = "txtstContact";
-            this.txtstContact.Size = new System.Drawing.Size(216, 27);
-            this.txtstContact.TabIndex = 24;
-            this.txtstContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtstContact_KeyPress);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(528, 31);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 24);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Lớp Tín Chỉ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 173);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 24);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Khoa";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel6.Location = new System.Drawing.Point(260, 202);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(217, 2);
-            this.panel6.TabIndex = 16;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(18, 102);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 24);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Mã Sinh Viên";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel7.Location = new System.Drawing.Point(260, 131);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(217, 2);
-            this.panel7.TabIndex = 17;
-            // 
-            // txtstDepartment
-            // 
-            this.txtstDepartment.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtstDepartment.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtstDepartment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.txtstDepartment.Location = new System.Drawing.Point(260, 170);
-            this.txtstDepartment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtstDepartment.Name = "txtstDepartment";
-            this.txtstDepartment.Size = new System.Drawing.Size(216, 27);
-            this.txtstDepartment.TabIndex = 13;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(103)))), ((int)(((byte)(178)))));
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(18, 31);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 24);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Tên Sinh Viên";
-            // 
-            // txtstNumber
-            // 
-            this.txtstNumber.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtstNumber.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtstNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.txtstNumber.Location = new System.Drawing.Point(260, 97);
-            this.txtstNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtstNumber.Name = "txtstNumber";
-            this.txtstNumber.Size = new System.Drawing.Size(216, 27);
-            this.txtstNumber.TabIndex = 14;
-            this.txtstNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtstNumber_KeyPress);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.panel8.Location = new System.Drawing.Point(260, 63);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(217, 2);
-            this.panel8.TabIndex = 18;
-            // 
-            // txtstName
-            // 
-            this.txtstName.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtstName.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
-            this.txtstName.Location = new System.Drawing.Point(260, 31);
-            this.txtstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtstName.Name = "txtstName";
-            this.txtstName.Size = new System.Drawing.Size(216, 27);
-            this.txtstName.TabIndex = 15;
-            // 
             // AddStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1054, 584);
@@ -527,29 +527,29 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox txtstClass;
-        private FlatButton.JFlatButton btnStInfoRefrsh;
-        private FlatButton.JFlatButton btnSaveStInfo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox txtstEmail;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox txtstContact;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox txtstDepartment;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtstNumber;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtstName;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox txtstName;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox txtstNumber;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtstDepartment;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtstContact;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtstEmail;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label7;
+        private FlatButton.JFlatButton btnSaveStInfo;
+        private FlatButton.JFlatButton btnStInfoRefrsh;
+        private System.Windows.Forms.TextBox txtstClass;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel5;
     }
 }

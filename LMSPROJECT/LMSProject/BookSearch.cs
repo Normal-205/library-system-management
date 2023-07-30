@@ -32,37 +32,10 @@ namespace LMSProject
                 dataGridView1.DataSource = dataTable;
             }
         }
-        /*
-        private void LoadAllBooks()
-        {
-            string connectionString = "data source=.; database=LMSDB; integrated security=SSPI";
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                string sql = "SELECT bkName as BookName, bkAuthor as BookAuthor, bkPublication as BookPublication, bkDate as BookDate " +
-                             "FROM tblBookInfos";
-
-                SqlCommand cmd = new SqlCommand(sql, con);
-
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-                DataTable dataTable = new DataTable();
-                dataAdapter.Fill(dataTable);
-
-                // Load the data to the DataGridView
-                LoadDataToDataGridView(dataTable);
-            }
-        }
-        */
         private DataTable dataTable; 
         private void txtBookName_TextChanged(object sender, EventArgs e)
         {
             string searchName = txtBookName.Text.Trim();
-            /*
-            if (string.IsNullOrEmpty(searchName))
-            {
-                LoadAllBooks();
-                return;
-            }
-            */
             if (txtBookName.Text != "")
             {
                 String CS = "data source=.; database = LMSDB; integrated security=SSPI";

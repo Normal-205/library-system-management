@@ -52,27 +52,30 @@ namespace LMSProject
         string stNumber;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.Rows[e.RowIndex].Cells[0].Value != null)
+            if (e.RowIndex >= 0 && e.RowIndex < dataGridView1.Rows.Count)
             {
                 stId = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                String CS = "data source=.; database = LMSDB; integrated security=SSPI";
+                using (SqlConnection con = new SqlConnection(CS))
+                {
+                    SqlCommand cmd = new SqlCommand("select *from tblStudentInfos where stId ='" + stId + "' ", con);
+                    con.Open();
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                    DataSet dataset = new DataSet();
+                    dataAdapter.Fill(dataset);
+                    stNumber = dataset.Tables[0].Rows[0][2].ToString();
+                    rowId = Int64.Parse(dataset.Tables[0].Rows[0][0].ToString());
+                    txtStName.Text = dataset.Tables[0].Rows[0][1].ToString();
+                    txtStNumber.Text = dataset.Tables[0].Rows[0][2].ToString();
+                    txtStDepartment.Text = dataset.Tables[0].Rows[0][3].ToString();
+                    txtStSemester.Text = dataset.Tables[0].Rows[0][4].ToString();
+                    txtStContact.Text = dataset.Tables[0].Rows[0][5].ToString();
+                    txtStEmail.Text = dataset.Tables[0].Rows[0][6].ToString();
+                }
             }
-            String CS = "data source=.; database = LMSDB; integrated security=SSPI";
-            using (SqlConnection con = new SqlConnection(CS))
+            else
             {
-
-                SqlCommand cmd = new SqlCommand("select *from tblStudentInfos where stId ='" + stId + "' ", con);
-                con.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-                DataSet dataset = new DataSet();
-                dataAdapter.Fill(dataset);
-                stNumber = dataset.Tables[0].Rows[0][2].ToString();
-                rowId = Int64.Parse(dataset.Tables[0].Rows[0][0].ToString());
-                txtStName.Text = dataset.Tables[0].Rows[0][1].ToString();
-                txtStNumber.Text = dataset.Tables[0].Rows[0][2].ToString();
-                txtStDepartment.Text = dataset.Tables[0].Rows[0][3].ToString();
-                txtStSemester.Text = dataset.Tables[0].Rows[0][4].ToString();
-                txtStContact.Text = dataset.Tables[0].Rows[0][5].ToString();
-                txtStEmail.Text = dataset.Tables[0].Rows[0][6].ToString();
+                MessageBox.Show("Vui lòng chọn một dòng.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -84,7 +87,7 @@ namespace LMSProject
                 using (SqlConnection con = new SqlConnection(CS))
                 {
 
-                    SqlCommand cmd = new SqlCommand("select *from tblStudentInfos where stName like '" + txtStudentname.Text + "%'", con);
+                    SqlCommand cmd = new SqlCommand("select * from tblStudentInfos where stName like '" + txtStudentname.Text + "%'", con);
                     con.Open();
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                     DataSet dataset = new DataSet();
@@ -97,8 +100,7 @@ namespace LMSProject
                 String CS = "data source=.; database = LMSDB; integrated security=SSPI";
                 using (SqlConnection con = new SqlConnection(CS))
                 {
-
-                    SqlCommand cmd = new SqlCommand("select *from tblStudentInfos", con);
+                    SqlCommand cmd = new SqlCommand("select * from tblStudentInfos", con);
                     con.Open();
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
                     DataSet dataset = new DataSet();
@@ -188,7 +190,7 @@ namespace LMSProject
                     DataSet dataset = new DataSet();
                     dataAdapter.Fill(dataset);
                     MessageBox.Show("Sinh viên có mã là  " + stNumber + "  đã được xoá!", " Success" + MessageBoxButtons.OK + MessageBoxIcon.Information);
-                   
+
                 }
                 //refreshing datagridview
                 SqlCommand cmd1 = new SqlCommand("select * from tblStudentInfos", con);
