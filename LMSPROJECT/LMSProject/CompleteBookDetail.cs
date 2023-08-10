@@ -79,7 +79,6 @@ namespace LMSProject
                     worksheet.Cells[i + 2, j] = urDataGridView.Rows[i].Cells[j - 1].Value.ToString();
                 }
             }
-            // Add "Exported in 11AM" to the last row
             int lastRowIndex = urDataGridView.Rows.Count + 2; // +2 because you have headers and a 1-based index
             int lastColumnIndex = urDataGridView.Columns.Count + 1; // +1 because you're adding a new column
             //the time the file is exported
